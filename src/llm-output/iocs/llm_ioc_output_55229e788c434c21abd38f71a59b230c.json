@@ -1,0 +1,255 @@
+{
+  "input_link": "https://unit42.paloaltonetworks.com/hildegard-malware-teamtnt/",
+  "output_iocs": [
+    [
+      "domain-name",
+      "borg.wtf",
+      "C2 domain registered on Dec. 24, 2020"
+    ],
+    [
+      "domain-name",
+      "teamtnt.red",
+      "Malicious scripts and binaries host"
+    ],
+    [
+      "domain-name",
+      "irc.borg.wtf",
+      "One of the C2s running an IRC server on port 6667"
+    ],
+    [
+      "domain-name",
+      "sampwn.anondns.net",
+      "One of the C2s running an IRC server on port 6667"
+    ],
+    [
+      "ip-address",
+      "45.9.150.36",
+      "Hosts malicious files and receives collected data to this C2"
+    ],
+    [
+      "ip-address",
+      "147.75.47.199",
+      "Malware connects to this IP to obtain victim host's public IP"
+    ],
+    [
+      "ip-address",
+      "45.9.148.108",
+      "Hosts malicious scripts and binaries"
+    ],
+    [
+      "ip-address",
+      "123.245.9.147",
+      "Runs an IRC server on port 6667"
+    ],
+    [
+      "ip-address",
+      "164.68.106.96",
+      "Runs an IRC server on port 6667"
+    ],
+    [
+      "ip-address",
+      "62.234.121.105",
+      "Runs an IRC server on port 6667"
+    ],
+    [
+      "file-name",
+      "TDGG",
+      "Script that downloads and executes tt.sh"
+    ],
+    [
+      "file-name",
+      "tt.sh",
+      "Downloads and runs tmate"
+    ],
+    [
+      "file-name",
+      "api.key",
+      "Used for creating a named tmate session"
+    ],
+    [
+      "file-name",
+      "tmate",
+      "tmate v2.4.0"
+    ],
+    [
+      "file-name",
+      "sGAU.sh",
+      "Script that installs masscan and scans Kubernetes' internal IP Kubelets"
+    ],
+    [
+      "file-name",
+      "kshell",
+      "Script for remote code execution in containers"
+    ],
+    [
+      "file-name",
+      "install_monerod.bash",
+      "Script hosted in a Github repo to build the official monero project"
+    ],
+    [
+      "file-name",
+      "setup_moneroocean_miner.sh",
+      "Script hosted in a Github repo to run the MoneroOcean advanced version of xmrig"
+    ],
+    [
+      "file-name",
+      "xmrig",
+      "ELF xmrig 6.7.2-mo3"
+    ],
+    [
+      "file-name",
+      "pei.sh",
+      "Downloads and executes pei64 or pei32"
+    ],
+    [
+      "file-name",
+      "pei64",
+      "Kubernetes penetration tool from the peirates project"
+    ],
+    [
+      "file-name",
+      "pei32",
+      "Same as pei64, but for i686 architecture"
+    ],
+    [
+      "file-name",
+      "xmr3.assi",
+      "Downloads and runs aws2.sh, t.sh and xmrig"
+    ],
+    [
+      "file-name",
+      "aws2.sh",
+      "Searches for cloud credentials"
+    ],
+    [
+      "file-name",
+      "t.sh",
+      "Downloads x86_64.so and tmate"
+    ],
+    [
+      "file-name",
+      "x86_64.so",
+      "Replaces /etc/ld.so.preload file to hide the tmate process"
+    ],
+    [
+      "file-name",
+      "xmrig.so",
+      "Shared object that hides the xmrig process"
+    ],
+    [
+      "file-name",
+      "xmr.sh",
+      "Downloads and executes xmrig and ziggy"
+    ],
+    [
+      "file-name",
+      "ziggy",
+      "Binary that packs an encrypted ELF"
+    ],
+    [
+      "hex-string",
+      "428uyvSqdpVZL7HHgpj2T5SpasCcoHZNTTzE3Lz2H5ZkiMzqayy19sYDcBGDCjoWbTfLBnc3tc9rG4Y8gXQ8fJiP5tqeBda",
+      "Wallet address used for cryptojacking"
+    ],
+    [
+      "sha256-hash",
+      "2c1528253656ac09c7473911b24b243f083e60b98a19ba1bbb050979a1f38a0f",
+      "TDGG script"
+    ],
+    [
+      "sha256-hash",
+      "2cde98579162ab165623241719b2ab33ac40f0b5d0a8ba7e7067c7aebc530172",
+      "tt.sh script"
+    ],
+    [
+      "sha256-hash",
+      "b34df4b273b3bedaab531be46a0780d97b87588e93c1818158a47f7add8c7204",
+      "api.key text"
+    ],
+    [
+      "sha256-hash",
+      "d2fff992e40ce18ff81b9a92fa1cb93a56fb5a82c1cc428204552d8dfa1bc04f",
+      "tmate ELF"
+    ],
+    [
+      "sha256-hash",
+      "74e3ccaea4df277e1a9c458a671db74aa47630928a7825f75994756512b09d64",
+      "sGAU.sh script"
+    ],
+    [
+      "sha256-hash",
+      "8e33496ea00218c07145396c6bcf3e25f4e38a1061f807d2d3653497a291348c",
+      "kshell script"
+    ],
+    [
+      "sha256-hash",
+      "518a19aa2c3c9f895efa0d130e6355af5b5d7edf28e2a2d9b944aa358c23d887",
+      "install_monerod.bash script"
+    ],
+    [
+      "sha256-hash",
+      "5923f20010cb7c1d59aab36ba41c84cd20c25c6e64aace65dc8243ea827b537b",
+      "setup_moneroocean_miner.sh script"
+    ],
+    [
+      "sha256-hash",
+      "a22c2a6c2fdc5f5b962d2534aaae10d4de0379c9872f07aa10c77210ca652fa9",
+      "xmrig ELF"
+    ],
+    [
+      "sha256-hash",
+      "ee6dbbf85a3bb301a2e448c7fddaa4c1c6f234a8c75597ee766c66f52540d015",
+      "pei.sh script"
+    ],
+    [
+      "sha256-hash",
+      "937842811b9e2eb87c4c19354a1a790315f2669eea58b63264f751de4da5438d",
+      "pei64 ELF"
+    ],
+    [
+      "sha256-hash",
+      "72cff62d801c5bcb185aa299eb26f417aad843e617cf9c39c69f9dde6eb82742",
+      "pei32 ELF"
+    ],
+    [
+      "sha256-hash",
+      "12c5c5d556394aa107a433144c185a686aba3bb44389b7241d84bea766e2aea3",
+      "xmr3.assi script"
+    ],
+    [
+      "sha256-hash",
+      "053318adb15cf23075f737daa153b81ab8bd0f2958fa81cd85336ecdf3d7de4e",
+      "aws2.sh script"
+    ],
+    [
+      "sha256-hash",
+      "e6422d97d381f255cd9e9f91f06e5e4921f070b23e4e35edd539a589b1d6aea7",
+      "t.sh script"
+    ],
+    [
+      "sha256-hash",
+      "77456c099facd775238086e8f9420308be432d461e55e49e1b24d96a8ea585e8",
+      "x86_64.so ELF"
+    ],
+    [
+      "sha256-hash",
+      "78f92857e18107872526feb1ae834edb9b7189df4a2129a4125a3dd8917f9983",
+      "xmrig ELF"
+    ],
+    [
+      "sha256-hash",
+      "3de32f315fd01b7b741cfbb7dfee22c30bf7b9a5a01d7ab6690fcb42759a3e9f",
+      "xmrig.so ELF"
+    ],
+    [
+      "sha256-hash",
+      "fe0f5fef4d78db808b9dc4e63eeda9f8626f8ea21b9d03cbd884e37cde9018ee",
+      "xmr.sh script"
+    ],
+    [
+      "sha256-hash",
+      "74f122fb0059977167c5ed34a7e217d9dfe8e8199020e3fe19532be108a7d607",
+      "ziggy ELF"
+    ]
+  ]
+}

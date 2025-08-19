@@ -1,0 +1,8 @@
+requests
+openai
+yara-python
+beautifulsoup4
+litellm
+python-dotenv
+openai
+ioc-finder

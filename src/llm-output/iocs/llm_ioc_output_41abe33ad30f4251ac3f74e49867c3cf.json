@@ -1,0 +1,40 @@
+{
+  "input_link": "https://cloud.google.com/blog/topics/threat-intelligence/suspected-apt-targets-ivanti-zero-day/",
+  "output_iocs": [
+    [
+      "domain-name",
+      "symantke[.]com",
+      "WARPWIRE C2"
+    ],
+    [
+      "file-name",
+      "compcheckresult.cgi",
+      "Web shell"
+    ],
+    [
+      "file-name",
+      "sessionserver.sh",
+      "Web shell dropper"
+    ],
+    [
+      "file-name",
+      "lastauthserverused.js",
+      "Credential harvester"
+    ],
+    [
+      "file-name",
+      "visits.py",
+      "Web shell"
+    ],
+    [
+      "file-name",
+      "sessionserver.pl",
+      "Script"
+    ],
+    [
+      "file-name",
+      "libsecure.so.1",
+      "Passive backdoor"
+    ]
+  ]
+}
